@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{category.name}}</title>
+    <style>
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .breadcrumb {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .breadcrumb a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .category-image {
+            max-width: 900px;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: block;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .button-container a {
+            display: inline-block;
+            padding: 12px 8px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: calc(55% - 15px);
+            box-sizing: border-box;
+            background-color: #2196F3;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            {{#category.parent}}
+            <a href="/category/{{_id}}">{{name}}</a> /
+            {{/category.parent}}
+            {{category.name}}
+        </div>
+        <h1>{{category.name}}</h1>
+        <img src="{{category.image}}" alt="{{category.name}}" class="category-image">
+        <p>{{category.description}}</p>
+
+        <h2 style="margin-top: 20px;">Автомобілі</h2>
+        <div class="button-container">
+            {{#cars}}
+            <a href="/car/{{_id}}">{{name}}</a>
+            {{/cars}}
+        </div>
+        <a href="javascript:history.back()" class="back-button">Назад</a>
+    </div>
+</body>
+</html>

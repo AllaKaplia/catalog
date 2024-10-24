@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{car.name}}</title>
+    <style>
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .car-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .car-card h1 {
+            margin-top: 0;
+            font-size: 2em;
+            color: #333;
+        }
+        .car-card p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .car-card img {
+            max-width: 900px;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: block;
+        }
+        .car-card img.placeholder {
+            content: url('/path/to/placeholder.jpg');
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="car-card">
+            <h1>{{car.name}}</h1>
+            <p>Ціна: {{car.price}}</p>
+            <p>Колір: {{car.color}}</p>
+            <p>{{car.description}}</p>
+            <img src="{{car.image}}" alt="{{car.name}}" onerror="this.classList.add('placeholder')">
+        </div>
+        <a href="javascript:history.back()" class="back-button">Назад</a>
+    </div>
+</body>
+</html>

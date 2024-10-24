@@ -1,0 +1,119 @@
+{
+    "categories": [
+      {
+        "name": "Седан",
+        "description": "Автомобілі з закритим кузовом, що мають чотири двері.",
+        "image": "https://images2.exist.ua/media/settings/files/opel_astra_a2Tieza.png"
+      },
+      {
+        "name": "Купе",
+        "description": "Дводверні автомобілі з закритим кузовом.",
+        "image": "https://menadzerfloty.pl/wp-content/uploads/2023/03/8371867545c68aa4ad4.jpg"
+      },
+      {
+        "name": "Універсал",
+        "description": "Автомобілі з відкритим кузовом, що мають великий багажник.",
+        "image": "https://kor.ill.in.ua/m/610x385/2159659.jpg"
+      },
+      {
+        "name": "Позашляховик",
+        "description": "Автомобілі, призначені для їзди по бездоріжжю.",
+        "image": "https://static.ukrinform.com/photos/2020_11/thumb_files/630_360_1605038486-499.jpg"
+      },
+      {
+        "name": "Спорткар",
+        "description": "Високошвидкісні автомобілі з потужним двигуном.",
+        "image": "https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2021/11/Chevrolet-Corvette-Z06-1.jpg"
+      }
+    ],
+    "cars": [
+      {
+        "name": "Toyota Camry",
+        "price": 25000,
+        "color": "Чорний",
+        "image": "https://images.dealer.com/ddc/vehicles/2025/Toyota/Camry/Sedan/trim_SE_2bd981/color/Heavy%20Metal-1L5-75%2C75%2C77-640-en_US.jpg?impolicy=downsize_bkpt&imdensity=1&w=520",
+        "description": "Комфортний седан з потужним двигуном.",
+        "category": "Седан"
+      },
+      {
+        "name": "Honda Accord",
+        "price": 27000,
+        "color": "Срібний",
+        "image": "https://narscars.com.ua/content/rent/cars/268/photos/232495-765x495-e85f.jpg",
+        "description": "Елегантний седан з високим рівнем безпеки.",
+        "category": "Седан"
+      },
+      {
+        "name": "Ford Mustang",
+        "price": 40000,
+        "color": "Червоний",
+        "image": "https://i.infocar.ua/i/12/4276/1400x936.jpg",
+        "description": "Класичний американський спорткар.",
+        "category": "Купе"
+      },
+      {
+        "name": "Chevrolet Corvette",
+        "price": 60000,
+        "color": "Жовтий",
+        "image": "https://bin.ua/uploads/posts/2024-08/1723030579_2.jpg",
+        "description": "Потужний спорткар з високими швидкісними характеристиками.",
+        "category": "Купе"
+      },
+      {
+        "name": "Volkswagen Golf",
+        "price": 22000,
+        "color": "Білий",
+        "image": "https://avto.proverka.com.ua/wp-content/uploads/2024/04/avtomobil-volkswagen-golf-harakterystyky.jpg",
+        "description": "Компактний універсал з високим рівнем комфорту.",
+        "category": "Універсал"
+      },
+      {
+        "name": "Subaru Outback",
+        "price": 30000,
+        "color": "Синій",
+        "image": "https://subaru.ua/storage/uploads/8feaeb67-7f50-425b-9e52-de5017ca259d.jpg",
+        "description": "Універсал з позашляховими можливостями.",
+        "category": "Універсал"
+      },
+      {
+        "name": "Jeep Wrangler",
+        "price": 35000,
+        "color": "Зелений",
+        "image": "https://jeep.ilta.ua/media/catalog/product/cache/856b1345a691dd6fddb57fb09f03bffa/j/e/jeep-wrangler-rubicon-unlimited-high-velocity-three-piece-hard-top.jpg",
+        "description": "Позашляховик з відкритим кузовом.",
+        "category": "Позашляховик"
+      },
+      {
+        "name": "Toyota RAV4",
+        "price": 28000,
+        "color": "Сірий",
+        "image": "https://www.topgear.com/sites/default/files/2024/09/Toyota-RAV4-Hybrid-036.jpg",
+        "description": "Компактний позашляховик з високим рівнем безпеки.",
+        "category": "Позашляховик"
+      },
+      {
+        "name": "Porsche 911",
+        "price": 100000,
+        "color": "Чорний",
+        "image": "https://di-uploads-pod29.dealerinspire.com/porscheontario1/uploads/2023/10/2024-Porsche-911.png",
+        "description": "Класичний спорткар з потужним двигуном.",
+        "category": "Спорткар"
+      },
+      {
+        "name": "Ferrari 488",
+        "price": 250000,
+        "color": "Червоний",
+        "image": "https://www.topgear.com/sites/default/files/cars-car/image/2015/12/li3020379_u6a0684488_1.jpg",
+        "description": "Високошвидкісний спорткар з потужним двигуном.",
+        "category": "Спорткар"
+      },
+      {
+        "name": "Lamborghini Huracan",
+        "price": 300000,
+        "color": "Жовтий",
+        "image": "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/2023/09_18_refresh/s/gw_hura_s_02_m.jpg",
+        "description": "Ексклюзивний спорткар з високими швидкісними характеристиками.",
+        "category": "Спорткар"
+      }
+    ]
+  }

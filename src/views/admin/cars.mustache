@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список автомобілів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            font-size: 2em;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="text"], input[type="number"], select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Список автомобілів</h1>
+        <ul>
+            {{#cars}}
+            <li>
+                <form action="/admin/car/{{_id}}" method="post">
+                    <input type="text" name="name" value="{{name}}" placeholder="Назва">
+                    <input type="text" name="description" value="{{description}}" placeholder="Опис">
+                    <input type="number" name="price" value="{{price}}" placeholder="Ціна">
+                    <input type="text" name="color" value="{{color}}" placeholder="Колір">
+                    <select name="category">
+                        {{#categories}}
+                        <option value="{{_id}}">{{name}}</option>
+                        {{/categories}}
+                    </select>
+                    <button type="submit">Зберегти</button>
+                </form>
+            </li>
+            {{/cars}}
+        </ul>
+    </div>
+    <script src="../../scripts/cars.js"></script>
+</body>
+</html>

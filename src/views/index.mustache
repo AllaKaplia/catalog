@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог автомобілів</title>
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .button-container a {
+            display: inline-block;
+            padding: 12px 8px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: calc(20% - 15px);
+            box-sizing: border-box;
+        }
+        .categories a {
+            background-color: #4CAF50;
+        }
+        .cars a {
+            background-color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Каталог автомобілів</h1>
+
+        <h2>Категорії</h2>
+        <div class="button-container categories">
+            {{#categories}}
+            <a href="/category/{{_id}}">{{name}}</a>
+            {{/categories}}
+        </div>
+
+        <h2 style="margin-top: 20px;">Автомобілі</h2>
+        <div class="button-container cars">
+            {{#cars}}
+            <a href="/car/{{_id}}">{{name}}</a>
+            {{/cars}}
+        </div>
+    </div>
+</body>
+</html>
