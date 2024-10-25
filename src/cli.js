@@ -17,16 +17,13 @@ program
     .action(async (file) => {
         const data = JSON.parse(fs.readFileSync(file, 'utf-8'));
 
-        // Create categories
         const categories = await Category.create(data.categories);
 
-        // Map category names to their ObjectIds
         const categoryMap = {};
         categories.forEach(category => {
             categoryMap[category.name] = category._id;
         });
 
-        // Create cars with the correct category ObjectIds
         const cars = data.cars.map(car => {
             return {
                 ...car,

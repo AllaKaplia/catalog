@@ -116,6 +116,10 @@ npm run import
 ```bash
 npm run import -- --file=path/to/file.json
 ```
+або використовуй файл в кореневій папці
+```bash
+npm run import -- import data.json
+```
 
 ### Частина 3: Адмін панель
 

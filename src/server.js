@@ -13,4 +13,3 @@ mongoose.connect(MONGO_URI)
     console.log(error.message);
     process.exit(1);
   });
-

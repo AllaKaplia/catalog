@@ -114,7 +114,11 @@ This application includes a CLI command to import cars and categories from a JSO
 #### Command to Run Import
 
 ```bash
-npm run import -- --file=path/to/file.json
+npm run import -- --file=path/to/your/file.json
+```
+or use the file in the root folder
+```bash
+npm run import -- import data.json
 ```
 
 ### Part 3: Admin Panel
