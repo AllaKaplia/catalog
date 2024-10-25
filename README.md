@@ -201,4 +201,9 @@ services:
 - `npm run seed` – Run migrations
 
 ### Author
-@AllaKaplia
+### `Backend developer: Alla kaplia`
+Portfolio: [GitHub](https://github.com/AllaKaplia)
+
+Contact in: [Telegram](https://t.me/AllaKaplia)
+
+Profile in: [LinkedIn](https://www.linkedin.com/in/alla-kaplia/)
